@@ -30,7 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                 path: node.frontmatter.path,
                 component: blogPostTemplate,
                 context: {}, // additional data can be passed via context
-            })
+            });
         });
-    })
-}
+    });
+};
